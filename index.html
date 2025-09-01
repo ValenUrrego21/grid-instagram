@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Instagram</title>
+    <!--SEAÑADE EL BOOSTRAP DE DOCS 2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
-        .container {
+        .container-fluid {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: repeat(8, 1fr);
@@ -16,7 +18,7 @@
         .a {
             grid-column: span 2 / span 2;
             grid-row: span 8 / span 8;
-            background-color: blue;
+            /*background-color: blue;*/
             height: 100%;
         }
 
@@ -94,7 +96,7 @@
             .a {
                 grid-column: span 12 / span 12;
                 grid-column-start: 1;
-                grid-row-start: 8;
+                grid-row-start: 9;
 
             }
 
@@ -114,13 +116,29 @@
                 display: none;
             }
         }
+
+    /*COLOCO MENU CARRUSEL*/
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
         <nav class="a">
-            <h2>A</h2>
+            <img src="instagram-logo.png" width="150px"> 
+            <br>
+            <br>
+            <a class="btn btn-light d-flex" href="#" role="button">
+                <img src="house-door-fill.svg" alt="" width="20px"> &nbsp; <strong>Inicio</strong></a>
+                <br>
+            <a class="btn btn-light d-flex" href="#" role="button">
+                <img src="search.svg" alt="" width="20px"> &nbsp; <strong>Búsqueda</strong></a>
+                <br>
+            <a class="btn btn-light d-flex" href="#" role="button">
+                <img src="compass.svg" alt="" width="20px"> &nbsp; <strong>Explorar</strong></a>
+                <br>
+            <a class="btn btn-light d-flex" href="#" role="button">
+                <img src="house-door-fill.svg" alt="" width="20px"> &nbsp; <strong>Inicio</strong></a>
+                 
         </nav>
         <header class="b">
             <h2>B</h2>
@@ -132,7 +150,7 @@
             <h2>D</h2>
         </aside>
     </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>
